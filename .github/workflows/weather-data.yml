@@ -1,0 +1,8 @@
+#! /bin/bash
+
+on:
+ schedule:
+  - cron: "* 10 * * *"   # <=== Change this value
+
+ workflow_dispatch:
+ 
