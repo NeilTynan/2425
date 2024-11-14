@@ -4,7 +4,11 @@ This README has been written with [GitHub's documentation on README's] (https://
 
 ## About this Project
 
+This notebook contains my coursework and assignments for ATU module 2425 -- Computer Infrastructure. It includes both the weekly assignments and the overall project.
+
 ## Use of this Project
+
+This repository may be of some interest to other students engaged in similar projects around computer infrastructure. Feel free to use whatever you like from it (though if another party has been referenced, I would ask that you likewise cite them).
 
 ## Getting Started
 
@@ -18,6 +22,8 @@ To understand how the workbook has developped to date, please see below a timeli
 - 10/11/2024 - Redid task 5, as it had the wrong filename. Completed task 8 by writing up the processes completed so far in a notebook. Task 9 was also completed in the same notebook and invovled loading in Met Eireann data into the notebook and examining it, as per course materials: w07v03_analyse. Started project work by by created a folder called ".github/workflows/" and a file called "weather-data.yml".
 
 ## Getting help
+
+Queries about this repository can be directed directly to my GitHub account (NeilTynan).
 
 ## Other References
 
