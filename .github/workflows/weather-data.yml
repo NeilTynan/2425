@@ -2,31 +2,31 @@ name: Run weather.sh script
 
 on:
   schedule:
-    - cron: "15 16 * * *"
+    - cron: "15 23 * * *"
 
   workflow_dispatch:
 
 jobs:
-  run-weather.sh:
+  run-weather-script:
     runs-on: unbuntu-latest
-
-    # Step 1: Checks out the repository
+    
+    Step 1: Check out the repository
      - name: Checkout repository
         uses: actions/checkout@v4
 
-    # Step 2: Set up Python
+    Step 2: Set up Python
      - name: Set up Python
         uses: actions/setup-python@v4
 
-    # Step 3: Install dependencies
+    Step 3: Install dependencies
      - name: Install dependencies
         run: pip install -r requirements.txt
 
-    # Step 4: Run the script
+    setuptep 4: Run the script
      - name: Run weather.sh script
         run: python weather.sh 
 
-    # Step 5: Push changes to the repository
+    Step 5: Push changes to the repository
      - name: Commit and push changes
         run: 
         git config --global user.name "NeilTynan"
