@@ -2,7 +2,7 @@ name: Run weather.sh script
 
 on:
   schedule:
-    - cron: "0 10 * * *"
+    - cron: "15 16 * * *"
 
   workflow_dispatch:
 
