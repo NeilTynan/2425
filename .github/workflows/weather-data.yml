@@ -31,7 +31,7 @@ jobs:
           git add .
           git commit -m '/workspaces/2425/data/weather'
           echo "Automated changes by weather.sh"
-          git push origin main"
+          git push origin main
 
 
  
