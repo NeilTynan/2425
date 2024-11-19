@@ -22,7 +22,7 @@ jobs:
           pip install pandas
 
       - name: Run weather.sh script
-        run:  weather.sh 
+        run:  bash weather.sh 
 
       - name: Commit and push changes
         run: 
