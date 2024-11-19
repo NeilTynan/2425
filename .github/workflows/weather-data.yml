@@ -25,12 +25,13 @@ jobs:
         run:  bash weather.sh 
 
       - name: Commit and push changes
-        run: 
+        run: |
           git config --global user.name "NeilTynan"
           git config --global user.email "g00438902@atu.ie"
           git add .
           git commit -m '/workspaces/2425/data/weather'
-          echo "No changes to commit
+          echo "Automated changes by weather.sh"
           git push origin main"
+
 
  
