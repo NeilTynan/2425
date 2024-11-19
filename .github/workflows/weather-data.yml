@@ -6,6 +6,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  content: write
+
 jobs:
   run-weather-script:
     runs-on: ubuntu-latest
