@@ -2,7 +2,7 @@ name: Run weather.sh script
 
 on:
   schedule:
-    - cron: "15 23 * * *"
+    - cron: "40 15 * * *"
 
   workflow_dispatch:
 
@@ -10,30 +10,26 @@ jobs:
   run-weather-script:
     runs-on: unbuntu-latest
     
-    Step 1: Check out the repository
-     - name: Checkout repository
+    steps:
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-    Step 2: Set up Python
-     - name: Set up Python
+      - name: Set up Python
         uses: actions/setup-python@v4
 
-    Step 3: Install dependencies
-     - name: Install dependencies
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
-    setuptep 4: Run the script
-     - name: Run weather.sh script
+      - name: Run weather.sh script
         run: python weather.sh 
 
-    Step 5: Push changes to the repository
-     - name: Commit and push changes
+      - name: Commit and push changes
         run: 
-        git config --global user.name "NeilTynan"
-        git config --global user.email "g00438902@atu.ie"
-        git add .
-        git commit -m '/workspaces/2425/data/weather'
-        echo "No changes to commit
-        git push origin main"
+          git config --global user.name "NeilTynan"
+          git config --global user.email "g00438902@atu.ie"
+          git add .
+          git commit -m '/workspaces/2425/data/weather'
+          echo "No changes to commit
+          git push origin main"
 
  
