@@ -1,32 +1,34 @@
+# Naming the workflow
 name: Run weather.sh script
 
+# Setting up the workflow so that it both runs daily at 10am and can be triggered mannually from the repository (Project task 2)
 on:
   schedule:
     - cron: "0 10 * * *"
 
   workflow_dispatch:
 
+# Giving the workflow permission to access and write to my repository
 permissions:
   contents: write
 
+# Setting up the job for the worklow
 jobs:
+  # Using a Linux virtual machine for the workflow's runner machine (Project task 3)
   run-weather-script:
     runs-on: ubuntu-latest
     
+    # Outlining the steps to be run on the runner machine
     steps:
+      # Step 1: Cloning my Repository (Project task 4)
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-
-      - name: Install dependencies
-        run: 
-          pip install pandas
-
+      # Step 2: Executing weather.sh Script  (Project task 5)
       - name: Run weather.sh script
         run:  bash weather.sh
 
+      # Step 3: Committing and pushing changes back to my Repository (Project task 6)
       - name: Commit and push changes
         run: |
           git config --global user.name "NeilTynan"
@@ -35,6 +37,3 @@ jobs:
           git commit -m '/workspaces/2425/data/weather'
           echo "Automated changes by weather.sh"
           git push origin main
-
-
- 
