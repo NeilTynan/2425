@@ -21,7 +21,7 @@ To understand how the workbook has developped to date, please see below a timeli
 - **08/11/2024** - Generated a file (formatted.txt) which included a formated timestamp and an empty file with the current timestamp for the file name (tasks 3 and 4) as per course material: w05v02_date. Downloaded two copies of today's weather data to create the "Today" and "20241108_114905.json" files (tasks 5 and 6) as per course materials: w06v01_wget and w06v02_wget_timestamps. Added a script, "weather.sh", to automate saving weather data to data/weather (task 7) as per course materials: w06v04_script.
 - **10/11/2024** - Redid task 5, as it had the wrong filename. Completed task 8 by writing up the processes completed so far in a notebook. Task 9 was also completed in the same notebook and invovled loading in Met Eireann data into the notebook and examining it, as per course materials: w07v03_analyse. Started project work by by created a folder called ".github/workflows/" and a file called "weather-data.yml".
 - **19/11/2024** - Completed Project, automating weather.sh script to run daily and push the new data to my repository. Course material referenced includes: w09v04_actions_attempt and w09v05_workflow_dispatch. A variety of other secondary materials were also referenced when it came to trying get the workflow to run correctly. These include: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows (how to use crons).
-- **20/11/2024** - Realised I accidently detached the HEAD of my commits from the main GitHub branch. Created a new branch to resolve this.
+- **20/11/2024** - Realised I accidently detached the HEAD of my commits from the main GitHub branch. Created a new branch and merged this with main to resolve this.
 
 
 ## Getting help
@@ -30,9 +30,9 @@ Queries about this repository can be directed directly to my GitHub account (Nei
 
 ## Other References
 
-HowtoDev: The "detached HEAD" state in Git: What it is and how to fix it - https://how-to.dev/the-detached-head-state-in-git-what-it-is-and-how-to-fix-it (How to fix a detached head state).
+**HowtoDev**: *The "detached HEAD" state in Git: What it is and how to fix it* - https://how-to.dev/the-detached-head-state-in-git-what-it-is-and-how-to-fix-it (How to fix a detached head state).
 
-GitHub Actions: About Workflows - https://docs.github.com/en/actions/writing-workflows/about-workflows (What the various steps involved in a workflow are and what they do)
+**GitHub Actions**: *About Workflows* - https://docs.github.com/en/actions/writing-workflows/about-workflows (What the various steps involved in a workflow are and what they do)
 
 ## Author
 
