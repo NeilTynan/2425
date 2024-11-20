@@ -12,21 +12,23 @@ on:
 permissions:
   contents: write
 
+# Setting up the job for the worklow
 jobs:
-  # Using a Linux virtual machine for the workflow (Project task 3)
+  # Using a Linux virtual machine for the workflow's runner machine (Project task 3)
   run-weather-script:
     runs-on: ubuntu-latest
     
+    # Outlining the steps to be run on the runner machine
     steps:
-      # Step 1: Cloning the Repository (Project task 4)
+      # Step 1: Cloning my Repository (Project task 4)
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Executing the weather.sh Script  (Project task 5)
+      # Step 2: Executing weather.sh Script  (Project task 5)
       - name: Run weather.sh script
         run:  bash weather.sh
 
-      # Step 3: Committing and pushing changes Back to my Repository (Project task 6)
+      # Step 3: Committing and pushing changes back to my Repository (Project task 6)
       - name: Commit and push changes
         run: |
           git config --global user.name "NeilTynan"
