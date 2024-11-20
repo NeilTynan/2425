@@ -31,6 +31,7 @@ Queries about this repository can be directed directly to my GitHub account (Nei
 ## Other References
 
 HowtoDev: The "detached HEAD" state in Git: What it is and how to fix it - https://how-to.dev/the-detached-head-state-in-git-what-it-is-and-how-to-fix-it (How to fix a detached head state).
+
 GitHub Actions: About Workflows - https://docs.github.com/en/actions/writing-workflows/about-workflows (What the various steps involved in a workflow are and what they do)
 
 ## Author
