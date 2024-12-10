@@ -22,6 +22,7 @@ To understand how the workbook has developped to date, please see below a timeli
 - **10/11/2024** - Redid task 5, as it had the wrong filename. Completed task 8 by writing up the processes completed so far in a notebook. Task 9 was also completed in the same notebook and invovled loading in Met Eireann data into the notebook and examining it, as per course materials: w07v03_analyse. Started project work by by created a folder called ".github/workflows/" and a file called "weather-data.yml".
 - **19/11/2024** - Completed Project, automating weather.sh script to run daily and push the new data to my repository. Course material referenced includes: w09v04_actions_attempt and w09v05_workflow_dispatch. A variety of other secondary materials were also referenced when it came to trying get the workflow to run correctly. These include: https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows (how to use crons).
 - **20/11/2024** - Realised I accidently detached the HEAD of my commits from the main GitHub branch. Created a new branch and merged this with main to resolve this.
+- **10/12/2024** - Updated the time at which the GitHub Workflow is trigged, as 10.00 was no longer working due to too many simulteanous requests taking place.
 
 ## Getting help
 
