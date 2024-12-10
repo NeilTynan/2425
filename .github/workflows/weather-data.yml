@@ -4,7 +4,7 @@ name: Run weather.sh script
 # Setting up the workflow so that it both runs daily at 10am and can be triggered mannually from the repository (Project task 2)
 on:
   schedule:
-    - cron: "0 10 * * *"
+    - cron: "0 17 * * *"
 
   workflow_dispatch:
 
